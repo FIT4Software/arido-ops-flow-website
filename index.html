@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- SEO Meta Tags Básicos -->
+    <title>
+      Árido Operation Flow | Software MES para Optimización de Procesos
+    </title>
+    <meta
+      name="description"
+      content="Árido OpsFlow: Software MES avanzado para la gestión y optimización de procesos industriales. Mejore la eficiencia y productividad de su planta."
+    />
+    <meta
+      name="keywords"
+      content="MES, software industrial, gestión de procesos, optimización de producción, Árido OpsFlow, Arido Software"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aridoopsflow.com/" />
+    <meta
+      property="og:title"
+      content="Árido Operation Flow - Software MES Avanzado"
+    />
+    <meta
+      property="og:description"
+      content="Optimice sus procesos industriales con Árido Operation Flow, el software MES líder en la industria. Gestione downtime, producción, mantenimiento y más."
+    />
+    <meta property="og:image" content="https://aridoopsflow.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Árido Operation Flow" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://aridoopsflow.com/" />
+    <meta
+      name="twitter:title"
+      content="Árido Operation Flow - Software MES Avanzado"
+    />
+    <meta
+      name="twitter:description"
+      content="Optimice sus procesos industriales con Árido Operation Flow, el software MES líder en la industria. Gestione downtime, producción, mantenimiento y más."
+    />
+    <meta
+      name="twitter:image"
+      content="https://aridoopsflow.com/twitter-image.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aridoopsflow.com/" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- iconos -->
+    <link
+      rel="./assets/icons/apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="./assets/icons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="./assets/icons/apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="./assets/icons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="./assets/icons/apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="./assets/icons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="./assets/icons/apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="./assets/icons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="./assets/icons/apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="./assets/icons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="./assets/icons/apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="./assets/icons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="./assets/icons/apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="./assets/icons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="./assets/icons/apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="./assets/icons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icons/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icons/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta
+      name="msapplication-square70x70logo"
+      content="./assets/icons/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="./assets/icons/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="./assets/icons/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="./assets/icons/mstile-310x310.png"
+    />
+  </head>
+
+  <body id="home">
+    <header>
+      <nav class="container">
+        <img
+          class="logo"
+          src="./assets/images/logo2.svg"
+          alt="Árido Ops Flow"
+        />
+
+        <div class="nav-links">
+          <a href="#home" data-i18n="nav.home">Inicio</a>
+          <a href="#arido" data-i18n="nav.about">Nosotros</a>
+          <a href="#modulos" data-i18n="nav.modules">Módulos</a>
+          <a href="#benefits" data-i18n="nav.benefits">Beneficios</a>
+          <a href="#contact" data-i18n="nav.contact">Contacto</a>
+          <div
+            class="lenguage-toggle"
+            id="language-toggle"
+            aria-label="Cambiar idioma"
+          >
+            <span data-i18n="nav.language">ES</span>
+          </div>
+          <a href="http://aridosoftware.com/" target="_blank"
+            ><img
+              src="./assets/images/logo-primary-icon.svg"
+              alt="arido software"
+              height="25px"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div id="hero-content">
+            <h1 id="hero_title" data-i18n="hero.title">
+              Optimice sus Procesos con Ops&middot;Flow
+            </h1>
+            <p id="hero_content" data-i18n="hero.description">
+              Transforme su planta industrial con nuestro software MES avanzado.
+              Gestione eficientemente la producción, reduzca el downtime y
+              mejore la calidad de sus procesos.
+            </p>
+            <div>
+              <a
+                id="hero_btn1"
+                href="#contacto"
+                class="btn"
+                data-i18n="hero.btn1"
+              >
+                Solicitar Demo
+              </a>
+              <a
+                id="hero_btn2"
+                href="#modulos"
+                class="btn btn-outline"
+                data-i18n="hero.btn2"
+              >
+                Explorar Módulos →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="arido">
+        <div class="container">
+          <div class="modulo">
+            <div class="modulo-image">
+              <a href="http://www.aridosoftware.com/" target="_blank">
+                <img
+                  src="./assets/images/logo-primary.svg"
+                  alt="Arido Software"
+                  width="250px"
+              /></a>
+            </div>
+            <div class="modulo-content">
+              <h3 data-i18n="modulo.title">Mas de 20 años de experiencia...</h3>
+              <p data-i18n="modulo.description">
+                Desde 2003, nuestra empresa ha colaborado con el sector
+                manufacturero, ofreciendo
+                <span class="resaltado" data-i18n="modulo.highlight1"
+                  >soluciones innovadoras</span
+                >
+                y
+                <span class="resaltado" data-i18n="modulo.highlight2"
+                  >resultados comprobados</span
+                >. Contamos con un equipo de 45 profesionales altamente
+                capacitados, con experiencia combinada en manufactura y
+                desarrollo de software. Somos reconocidos por nuestros clientes
+                como
+                <span class="resaltado" data-i18n="modulo.highlight3">
+                  líderes técnicos y expertos en procesos empresariales</span
+                >, lo que nos permite abordar desafíos complejos con eficacia.
+                Nuestro equipo se especializa en liderazgo técnico en OEE
+                (Eficiencia General de los Equipos), arquitectura de soluciones,
+                y desarrollo de almacenes de datos.
+                <span class="resaltado" data-i18n="modulo.highlight4">
+                  Nuestro compromiso es impulsar la transformación digital del
+                  sector manufacturero con soluciones confiables y
+                  personalizadas</span
+                >
+              </p>
+              <p>
+                Si necesita saber mas sobre nosotros,
+                <a href="http://www.aridosoftware.com/" target="_blank"
+                  >visite nuestra web
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <img src="./assets/images/limit1.svg" alt="limit" class="limit1" />
+      <div class="banner-container">
+        <div id="banner">
+          <h3 class="phrase"></h3>
+        </div>
+
+        <h3 data-i18n="banner.title">¡Estas necesitando!</h3>
+        <img
+          src="./assets/images/logo2.svg"
+          alt="Flecha"
+          class="logo-banner"
+          width="350px"
+        />
+      </div>
+      <img src="./assets/images/limit2.svg" alt="limit" class="limit2" />
+
+      <section id="modulos">
+        <div class="container">
+          <div class="modulo">
+            <div class="modulo-content">
+              <h3 data-i18n="downtime.title">Paros de Producción</h3>
+              <p data-i18n="downtime.description">
+                El tiempo de inactividad, o downtime, es uno de los principales
+                desafíos en cualquier operación industrial o empresarial.
+                Identificar y reducir estos períodos sin actividad es crucial
+                para maximizar la eficiencia operativa y minimizar las pérdidas
+                económicas. Implementar estrategias efectivas de monitoreo,
+                mantenimiento preventivo y análisis de causas puede ayudar a
+                mejorar la productividad, optimizando tanto los recursos como el
+                tiempo de funcionamiento de los equipos y sistemas.
+              </p>
+              <ul>
+                <li>
+                  <span data-i18n="downtime.feature1">Refresco de</span>
+                  <span class="resaltado" data-i18n="downtime.highlight1"
+                    >datos en tiempo real</span
+                  >
+                </li>
+                <li>
+                  <span class="resaltado" data-i18n="downtime.highlight2"
+                    >Captura de paros</span
+                  >
+                  <span data-i18n="downtime.feature2">desde PLC</span>
+                </li>
+                <li>
+                  <span class="resaltado" data-i18n="downtime.highlight3"
+                    >Crear, modificar y eliminar</span
+                  >
+                  <span data-i18n="downtime.feature3">paros manualmente</span>
+                </li>
+                <li>
+                  <span class="resaltado" data-i18n="downtime.highlight4"
+                    >División de paros</span
+                  >
+                  <span data-i18n="downtime.feature4"
+                    >por causas distintas</span
+                  >
+                </li>
+                <li data-i18n="downtime.feature5">
+                  Reporte detallado de paros
+                </li>
+                <li>
+                  <span class="resaltado" data-i18n="downtime.highlight5"
+                    >Línea de tiempo</span
+                  >
+                  <span data-i18n="downtime.feature6"
+                    >para una mejor visualización</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="modulo-image">
+              <img
+                src="./assets/images/downtime-min.png"
+                alt="Módulo Downtime"
+              />
+            </div>
+          </div>
+
+          <div class="modulo">
+            <div class="modulo-content">
+              <h3 data-i18n="productionMonitoring.title">
+                Monitoreo de Procesos de Producción
+              </h3>
+              <p data-i18n="productionMonitoring.description">
+                Supervisar y optimizar los procesos de producción en tiempo real
+                es esencial para garantizar la eficiencia y la calidad en cada
+                etapa de la operación. Al implementar sistemas de monitoreo
+                avanzados, las empresas pueden identificar cuellos de botella,
+                anticiparse a posibles fallos y ajustar los parámetros de
+                producción para cumplir con los objetivos establecidos. Esto no
+                solo mejora la productividad, sino que también permite una toma
+                de decisiones más ágil y fundamentada, maximizando el
+                rendimiento y la competitividad en el mercado.
+              </p>
+              <ul>
+                <li>
+                  <span
+                    class="resaltado"
+                    data-i18n="productionMonitoring.feature1"
+                    >Captura</span
+                  >
+                  <span data-i18n="productionMonitoring.feature2"
+                    >de producto bueno y basura desde PLC</span
+                  >
+                </li>
+                <li>
+                  <span data-i18n="productionMonitoring.feature3"
+                    >Refresco de</span
+                  >
+                  <span
+                    class="resaltado"
+                    data-i18n="productionMonitoring.highlight1"
+                    >datos en tiempo real</span
+                  >
+                </li>
+                <li data-i18n="productionMonitoring.feature4">
+                  Visualización de producción por turno, equipo y orden de
+                  proceso
+                </li>
+                <li>
+                  <span
+                    class="resaltado"
+                    data-i18n="productionMonitoring.highlight2"
+                    >Velocidad de producción</span
+                  >
+                  <span data-i18n="productionMonitoring.feature5"
+                    >real e ideal</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="modulo-image">
+              <img
+                src="./assets/images/production-min.png"
+                alt="Módulo Producción"
+              />
+            </div>
+          </div>
+
+          <div class="modulo">
+            <div class="modulo-content">
+              <h3 data-i18n="workflowManagement.title">
+                Gestión y Optimización del Flujo de Trabajo
+              </h3>
+              <p data-i18n="workflowManagement.description">
+                <span
+                  class="resaltado"
+                  data-i18n="workflowManagement.highlight1"
+                  >Administrar y optimizar el flujo de trabajo</span
+                >
+                es clave para lograr una producción más eficiente y organizada.
+                Una buena gestión permite identificar áreas de mejora, eliminar
+                pasos innecesarios y coordinar tareas de manera efectiva entre
+                equipos. Al implementar herramientas y estrategias adecuadas, se
+                puede mejorar la sincronización de procesos, reducir tiempos
+                muertos y aumentar la capacidad de respuesta ante cambios en la
+                demanda. Esto asegura una operación fluida, productiva y
+                alineada con los objetivos de la organización.
+              </p>
+              <ul>
+                <li>
+                  <span
+                    class="resaltado"
+                    data-i18n="workflowManagement.feature1"
+                    >Creación, modificación y eliminación</span
+                  >
+                  <span data-i18n="workflowManagement.feature1_suffix"
+                    >de orden de procesos</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="resaltado"
+                    data-i18n="workflowManagement.highlight2"
+                    >Visualización de progreso de</span
+                  >
+                  <span data-i18n="workflowManagement.feature2_suffix"
+                    >producción en tiempo real</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="resaltado"
+                    data-i18n="workflowManagement.feature2"
+                    >Sincronización con SAP</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="modulo-image">
+              <img
+                src="./assets/images/po-min.png"
+                alt="Módulo Orden de Proceso"
+              />
+            </div>
+          </div>
+
+          <div class="modulo">
+            <div class="modulo-content">
+              <h3 data-i18n="defectManagement.title">
+                Gestión de Defectos y Mantenimiento Preventivo
+              </h3>
+              <p data-i18n="defectManagement.description">
+                Programar y realizar un seguimiento adecuado del mantenimiento
+                es esencial para prevenir paradas no planificadas y garantizar
+                el buen funcionamiento de los equipos. Una estrategia de
+                mantenimiento preventivo ayuda a identificar y corregir defectos
+                antes de que se conviertan en problemas mayores, reduciendo el
+                riesgo de fallos inesperados. Con herramientas de monitoreo y
+                planificación, las empresas pueden optimizar los recursos,
+                extender la vida útil de los activos y mantener la continuidad
+                operativa, minimizando costos y maximizando la productividad.
+              </p>
+              <ul>
+                <li>
+                  <span class="resaltado" data-i18n="defectManagement.feature1"
+                    >Creación, modificación y eliminación</span
+                  >
+                  <span data-i18n="defectManagement.feature1.2"
+                    >de defectos</span
+                  >
+                </li>
+                <li>
+                  <span class="resaltado" data-i18n="defectManagement.feature2"
+                    >Sincronización con SAP</span
+                  >
+                </li>
+                <li>
+                  <span class="resaltado" data-i18n="defectManagement.feature3"
+                    >Estadísticas</span
+                  >
+                  <span data-i18n="defectManagement.feature3.2"
+                    >de mantenimiento</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="modulo-image">
+              <img
+                src="./assets/images/defectos-min.png"
+                alt="Módulo Mantenimiento"
+              />
+            </div>
+          </div>
+
+          <div class="modulo">
+            <div class="modulo-content">
+              <h3 data-i18n="oeeAnalysis.title">
+                OEE y Análisis de Datos (KPI)
+              </h3>
+              <p data-i18n="oeeAnalysis.description">
+                El seguimiento de indicadores clave de desempeño (KPI) y del OEE
+                (Efectividad General de los Equipos) es fundamental para evaluar
+                la eficiencia operativa y tomar decisiones basadas en datos.
+                Generar reportes detallados y personalizados permite identificar
+                tendencias, detectar áreas de mejora y medir el impacto de las
+                estrategias implementadas. Al integrar herramientas avanzadas de
+                análisis, las empresas pueden optimizar procesos, mejorar la
+                productividad y garantizar que los objetivos organizacionales se
+                alineen con las metas de rendimiento a corto y largo plazo.
+              </p>
+            </div>
+            <div class="modulo-image">
+              <img
+                src="./assets/images/oee-overall-equipment-effectiveness-min.png"
+                alt="Módulo Reportes"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="beneficios">
+        <div class="container">
+          <h2 data-i18n="benefits.title">
+            Te muestro algunos beneficios de Ops·Flow?
+          </h2>
+          <div class="step-container">
+            <div class="step">
+              <img
+                src="./assets/images/estrategia.svg"
+                alt="Estrategias eficientes"
+              />
+              <h3 data-i18n="benefits.efficientStrategies">
+                Estrategias eficientes
+              </h3>
+              <p data-i18n="benefits.efficientStrategiesDesc">
+                Toma decisiones operativas y estratégicas basadas en datos
+                concretos.
+              </p>
+            </div>
+            <div class="step">
+              <img
+                src="./assets/images/producto.svg"
+                alt="Productos mejorados"
+              />
+              <h3 data-i18n="benefits.improvedProducts">Productos mejorados</h3>
+              <p data-i18n="benefits.improvedProductsDesc">
+                Mejora de manera constante la calidad de los productos y el
+                diseño de nuevos desarrollos.
+              </p>
+            </div>
+            <div class="step">
+              <img src="./assets/images/realtime.svg" alt="Tiempo Real" />
+              <h3 data-i18n="benefits.realTime">Tiempo Real</h3>
+              <p data-i18n="benefits.realTimeDesc">
+                Obtén visibilidad y control en tiempo real sobre toda la cadena
+                de suministro de fabricación
+              </p>
+            </div>
+            <div class="step">
+              <img src="./assets/images/pruebas.svg" alt="Soporte" />
+              <h3 data-i18n="benefits.support">Soporte</h3>
+              <p data-i18n="benefits.supportDesc">
+                Accede a soporte personalizado para resolver rápidamente
+                operaciones críticas.
+              </p>
+            </div>
+            <div class="step">
+              <img
+                src="./assets/images/diagnostico.svg"
+                alt="Diagnóstico temprano"
+              />
+              <h3 data-i18n="benefits.earlyDiagnosis">Diagnóstico temprano</h3>
+              <p data-i18n="benefits.earlyDiagnosisDesc">
+                Agiliza el diagnóstico de causas raíz y la resolución de
+                problemas.
+              </p>
+            </div>
+            <div class="step">
+              <img
+                src="./assets/images/productividad.svg"
+                alt="Productividad"
+              />
+              <h3 data-i18n="benefits.productivity">Productividad</h3>
+              <p data-i18n="benefits.productivityDesc">
+                Incrementa la productividad, reduce desperdicios y optimiza la
+                gestión del personal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="implementacion">
+        <div class="container">
+          <h2 data-i18n="implementation.title">
+            Implementacion Rapida, Eficiente y Segura
+          </h2>
+          <div class="step-container">
+            <div class="step">
+              <img
+                src="./assets/images/visita.svg"
+                alt="Entendemos tu fábrica"
+              />
+              <h3 data-i18n="implementation.understandFactory">
+                Entendemos tu fábrica
+              </h3>
+              <p data-i18n="implementation.understandFactoryDesc">
+                Analizamos los procesos que realiza, los datos que se generan y
+                las áreas que pueden digitalizarse.
+              </p>
+            </div>
+            <div class="step">
+              <img
+                src="./assets/images/analisis.svg"
+                alt="Analisis y Desarrollamos"
+              />
+              <h3 data-i18n="implementation.analysisAndDevelop">
+                Analisis y Desarrollamos
+              </h3>
+              <p data-i18n="implementation.analysisAndDevelopDesc">
+                Usamos los datos obtenidos para crear los primeros modelos
+              </p>
+            </div>
+            <div class="step">
+              <img
+                src="./assets/images/integracion.svg"
+                alt="Integramos sistemas"
+              />
+              <h3 data-i18n="implementation.integrateSystems">
+                Integramos sistemas
+              </h3>
+              <p data-i18n="implementation.integrateSystemsDesc">
+                Conectamos el software con el ERP (Planificación de Recursos
+                Empresariales) y aseguramos la trazabilidad de los productos.
+              </p>
+            </div>
+            <div class="step">
+              <img src="./assets/images/pruebas.svg" alt="Realizamos pruebas" />
+              <h3 data-i18n="implementation.runTests">Realizamos pruebas</h3>
+              <p data-i18n="implementation.runTestsDesc">
+                Implementamos el sistema en una fase inicial para recopilar más
+                datos y ajustarlo según diferentes escenarios.
+              </p>
+            </div>
+            <div class="step">
+              <img
+                src="./assets/images/mejoras.svg"
+                alt="Ampliamos y mejoramos"
+              />
+              <h3 data-i18n="implementation.expandAndImprove">
+                Ampliamos y mejoramos
+              </h3>
+              <p data-i18n="implementation.expandAndImproveDesc">
+                Supervisamos el rendimiento y evolucionamos el software hasta
+                que todos los procesos de la fábrica estén completamente
+                integrados en el sistema MES.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <img src="./assets/images/limit1.svg" alt="limit" class="limit1" />
+      <section id="contacto">
+        <div class="container">
+          <h2 data-i18n="contact.titlePart1">
+            ¿Listo para
+            <span class="resaltado" data-i18n="contact.highlight"
+              >TRANSFORMAR</span
+            >
+            su operación industrial?
+          </h2>
+          <h2 data-i18n="contact.titlePart2">Contáctenos</h2>
+          <p data-i18n="contact.description">
+            Póngase en contacto con nosotros para obtener más información sobre
+            Árido Operation Flow.
+          </p>
+
+          <form id="contactForm">
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre y Apellido"
+              required
+              data-i18n="contact.namePlaceholder"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo Electrónico"
+              required
+              data-i18n="contact.emailPlaceholder"
+            />
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribe tu mensaje aquí"
+              required
+              data-i18n="contact.messagePlaceholder"
+            ></textarea>
+            <button
+              type="submit"
+              data-i18n="contact.submitButton"
+              id="submitButton"
+            >
+              Contactar Ahora!
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <a href="http://www.aridosoftware.com/" target="_blank">
+                <img
+                  src="./assets/images/logo-primary-invert.svg"
+                  alt="Arido Software"
+                  class="logo-footer"
+                />
+              </a>
+              <p data-i18n="footer.description">
+                Soluciones de software MES para optimizar sus procesos
+                industriales.
+              </p>
+              <a href="http://www.aridosoftware.com/" target="_blank"
+                >visite nuestra web
+              </a>
+            </div>
+            <div class="footer-section">
+              <h3 data-i18n="footer.contactTitle">Contacto</h3>
+              <ul>
+                <li data-i18n="footer.email">Email: info@aridosoftware.com</li>
+                <li data-i18n="footer.phone">Teléfono: +54 9 2657 428123</li>
+                <li data-i18n="footer.address">
+                  Dirección: Lamadrid 1138, Villa Mercedes(San Luis), Argentina
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3 data-i18n="footer.quickLinksTitle">Enlaces Rápidos</h3>
+              <ul>
+                <li><a href="#home" data-i18n="footer.homeLink">Inicio</a></li>
+                <li>
+                  <a href="#modulos" data-i18n="footer.modulesLink">Módulos</a>
+                </li>
+                <li>
+                  <a href="#beneficios" data-i18n="footer.benefitsLink"
+                    >Beneficios</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#implementacion"
+                    data-i18n="footer.implementationLink"
+                    >Implementación</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacto" data-i18n="footer.contactLink"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p data-i18n="footer.rights">
+              &copy; 2024 Árido Operation Flow. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <div class="floating-btn hidden">
+        <a href="#contacto" class="btn" data-i18n="footer.requestDemoBtn"
+          >Solicitar Demo</a
+        >
+      </div>
+    </main>
+  </body>
+</html>
+<script src="https://unpkg.com/i18next/i18next.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/translate.js"></script>
