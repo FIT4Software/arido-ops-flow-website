@@ -439,6 +439,7 @@ button:hover {
   #hero-content {
     width: 100%;
     padding: 1rem;
+    padding-bottom: 60px;
   }
   .btn {
     padding: 0.4rem 0.8rem;
