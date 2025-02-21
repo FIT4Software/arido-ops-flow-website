@@ -17,6 +17,8 @@ const es = {
   banner: { title: "¡Estas necesitando!" },
   modulo: {
     title: "Más de 20 años de experiencia...",
+    visita: "Si necesita saber mas sobre nosotros,",
+    visita2: "visite nuestra web",
     description:
       "Desde 2003, nuestra empresa ha colaborado con el sector manufacturero, ofreciendo soluciones innovadoras y resultados comprobados. Contamos con un equipo de 45 profesionales altamente capacitados, con experiencia combinada en manufactura y desarrollo de software. Somos reconocidos por nuestros clientes como líderes técnicos y expertos en procesos empresariales, lo que nos permite abordar desafíos complejos con eficacia. Nuestro equipo se especializa en liderazgo técnico en OEE (Eficiencia General de los Equipos), arquitectura de soluciones, y desarrollo de almacenes de datos. Nuestro compromiso es impulsar la transformación digital del sector manufacturero con soluciones confiables y personalizadas.",
     highlight1: "soluciones innovadoras",
@@ -166,58 +168,60 @@ const en = {
   banner: { title: "¡You are in need!" },
   modulo: {
     title: "More than 20 years of experience...",
+    visita: "If you need to know more about us,",
+    visita2: "Visit our website",
     description:
-      "Since 2003, our company Arido Software has collaborated with the manufacturing sector, offering innovative solutions and proven results. We have a team of 45 highly trained professionals with combined experience in manufacturing and software development. Our clients recognize us as technical leaders and experts in business processes, which allows us to effectively tackle complex challenges. Our team specializes in technical leadership in OEE (Overall Equipment Effectiveness), solution architecture, and data warehouse development. Our commitment is to drive the digital transformation of the manufacturing sector with reliable and customized solutions.",
+      "Since 2003, our company has been collaborating with the industry Delivering innovative solutions and proven results. We have a team of 45 highly qualified professionals. with combined manufacturing and software development. We are recognized by our customers as technical leaders and business process experts, enabling us to tackle complex challenges effectively. Our team specializes in technical leadership in OEE (Overall Equipment Efficiency), solution architecture, and development of data warehouses. Our commitment is to drive the digital transformation of the manufacturing process with reliable solutions and custom",
     highlight1: "innovative solutions",
     highlight2: "proven results",
     highlight3: "technical leaders and business process experts",
     highlight4:
-      "Our commitment is to drive the digital transformation of the manufacturing sector with reliable and customized solutions",
+      "Our commitment is to drive the digital transformation of the manufacturing process with reliable solutions and custom ",
   },
   downtime: {
-    title: "Production Downtime",
+    title: "Production Stoppages",
     description:
-      "Downtime is one of the main challenges in any industrial or business operation. Identifying and reducing these periods of inactivity is crucial to maximizing operational efficiency and minimizing economic losses. Implementing effective monitoring strategies, preventive maintenance, and root cause analysis can help improve productivity by optimizing both resources and equipment and system uptime.",
+      "Eliminating downtime is one of the main challenges in any industrial or business operation. Identifying and reducing  downtime is crucial to maximize operational efficiency and minimize Economic losses. Implement effective monitoring strategies, preventive maintenance, and root cause analysis can help improve productivity, optimizing both resources and uptime of equipment and systems.",
     feature1: "",
-    highlight1: "Real-time data refresh",
-    highlight2: "Downtime capture",
-    feature2: "from PLC",
-    highlight3: "Create, modify, and delete",
-    feature3: "downtimes manually",
-    highlight4: "Downtime split",
+    highlight1: "Real-time actionable data",
+    highlight2: "Integrated capture of stoppages from PLC",
+    feature2: "",
+    highlight3: "Add and Update ",
+    feature3: "stoppages manually",
+    highlight4: "Separate and refine a single stoppage event to capture ",
     feature4: "by different causes",
-    feature5: "Detailed downtime report",
+    feature5: "Detailed report of stoppages",
     highlight5: "Timeline",
-    feature6: "for better visualization",
+    feature6: "for improved visualization",
   },
   productionMonitoring: {
     title: "Production Process Monitoring",
     description:
-      "Production Process Monitoring Supervising and optimizing production processes in real-time is essential to ensure efficiency and quality at every stage of the operation. By implementing advanced monitoring systems, companies can identify bottlenecks, anticipate potential failures, and adjust production parameters to meet established objectives. This not only improves productivity but also allows for more agile and informed decision-making, maximizing performance and competitiveness in the market.",
-    feature1: "Total/Good Product and Waste",
+      "Monitoring production processes in real-time is essential to optimize efficiency and quality in every stage of the operation. When companies implement advanced monitoring systems they can quickly identify bottlenecks, anticipate failures, and adjust the parameters of production in real-time to meet the established objectives. Not only does this improve productivity, it also allows for more agile and informed decision-making, maximizing performance and competitiveness in the market.",
+    feature1: "Capture of good and defective product",
     feature2: "from PLC ",
     feature3: "",
     highlight1: "Real-time data refresh ",
-    feature4: "Production visualization by shift, team, and process order ",
-    highlight2: "Real and ideal production speed",
+    feature4: "Production displays by shift, equipment, and order process ",
+    highlight2: "True and ideal production speed",
     feature5: "",
   },
   workflowManagement: {
     title: "Workflow Management and Optimization",
     description:
-      '<span class="resaltado" data-i18n="workflowManagement.highlight1">Managing and optimizing the workflow</span> is key to achieving more efficient and organized production. Good management allows for the identification of improvement areas, elimination of unnecessary steps, and effective coordination of tasks among teams. By implementing appropriate tools and strategies, process synchronization can be improved, downtime reduced, and responsiveness to demand changes increased. This ensures a smooth, productive operation aligned with the organization\'s objectives',
+      '<span class="resaltado" data-i18n="workflowManagement.highlight1">Managing and optimizing the workflow</span> is key to achieving more efficient and organized production. Good management tools expose areas for improvement, eliminate unnecessary steps, and coordinate tasks effectively between Operators and Equipment. Implementing appropriate tools and strategies can improve process synchronization, reduce time, and increase the ability of the organization to respond to changes in demand. This ensures the manufacturing process is  smooth, productive, and aligned with the objectives of the organization. ',
     highlight1: "Managing and optimizing the workflow",
-    highlight2: "real-time production",
-    feature1: "Creation, modification, and deletion",
-    feature1_suffix: "of process orders",
+    highlight2: "Real-time production progress display ",
+    feature1: "Creating, Modifying, and Deleting ",
+    feature1_suffix: "process orders",
     feature2:
       "Synchronization with SAP, Oracle Fusion and other 1st class ERPs",
-    feature2_suffix: "real-time production",
+    feature2_suffix: "",
   },
   defectManagement: {
     title: "Defect Management and Preventive Maintenance",
     description:
-      "Scheduling and properly tracking maintenance is essential to prevent unplanned downtime and ensure the smooth operation of equipment. A preventive maintenance strategy helps identify and correct defects before they become major problems, reducing the risk of unexpected failures. With monitoring and planning tools, companies can optimize resources, extend the life of assets, and maintain operational continuity, minimizing costs and maximizing productivity.",
+      "Scheduling and tracking maintenance is essential to prevent unplanned downtime and ensure the  equipment is performing efficiently. A Preventive Maintenance strategy helps identify and correct defects before they become bigger problems, reducing the risk of unexpected failures. With monitoring tools and planning, companies can optimize resources, extend asset life and maintain optimal throughput, minimizing costs and maximizing productivity.",
     feature1: "Creation, modification, and deletion",
     "feature1.2": "of defects",
     feature2:
@@ -228,7 +232,7 @@ const en = {
   oeeAnalysis: {
     title: "OEE and Data Analysis (KPI)",
     description:
-      "Tracking key performance indicators (KPI) and Overall Equipment Effectiveness (OEE) is essential to evaluate operational efficiency and make data-driven decisions. Generating detailed and customized reports allows for the identification of trends, detection of improvement areas, and measurement of the impact of implemented strategies. By integrating advanced analysis tools, companies can optimize processes, improve productivity, and ensure that organizational objectives align with short- and long-term performance goals.",
+      "Tracking key performance indicators (KPIs) and OEE (Overall Equipment Effectiveness) is critical to making data-driven decisions that optimizes the efficiency of the manufacturing process. Generating detailed and customized reports allows you to identify trends, detect areas for improvement, and measure the impact of the implemented strategies. By integrating advanced tools that  continuously analyze the overall operation, companies can optimize processes, improve the quality of their lives, and improve their productivity and ensure that organizational objectives are align with short- and long-term performance goals.",
   },
   benefits: {
     title: "Here are some benefits of Ops·Flow?",

@@ -81,7 +81,8 @@ nav {
   height: 50px;
   margin-bottom: 10px;
 }
-.nav-links {
+.nav-links,
+.nav-links-mobile {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -90,7 +91,8 @@ nav {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-.nav-links a {
+.nav-links a,
+.nav-links-mobile a {
   color: #666;
   text-decoration: none;
   transition: color 0.3sease;
@@ -101,7 +103,8 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links-mobile a:hover {
   color: var(--border-color);
 }
 
@@ -125,6 +128,7 @@ section {
   background-repeat: no-repeat;
   background-color: #f3f4ef;
   height: 100vh;
+  text-shadow: 0 0 10px #ffffff;
 }
 
 #hero-content {
@@ -358,6 +362,9 @@ button:hover {
 }
 
 @media (max-width: 1024px) {
+  .nav-links-mobile {
+    display: none;
+  }
   #hero {
     background-image: url(../images/hero.svg);
     background-position: top center;
@@ -371,6 +378,22 @@ button:hover {
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+  }
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .nav-links-mobile a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .nav-links-mobile a:hover {
+    color: var(--border-color);
   }
   #hero {
     background-position: top center;
@@ -410,7 +433,7 @@ button:hover {
   }
   #hero {
     background-position: top center;
-    background-size: contain;
+    background-size: 180%;
     height: calc(100vh - 60px);
   }
   #hero-content {
