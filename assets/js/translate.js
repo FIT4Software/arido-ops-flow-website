@@ -13,6 +13,7 @@ const es = {
       "Transforme su planta industrial con nuestro software MES avanzado. Gestione eficientemente la producción, reduzca el downtime y mejore la calidad de sus procesos.",
     btn1: "Solicitar Demo",
     btn2: "Explorar Módulos →",
+    btn3: "Descargar Folleto",
   },
   banner: { title: "¡Estas necesitando!" },
   modulo: {
@@ -163,6 +164,7 @@ const en = {
       "Transform your industrial plant with our advanced MES software. Efficiently manage production, reduce downtime, and improve the quality of your processes.",
     btn1: "Request a Demo",
     btn2: "Explore Modules →",
+    btn3: "Download Brochure",
   },
   banner: { title: "¡You are in need!" },
   modulo: {
