@@ -193,7 +193,8 @@ ul {
 
 /* Botones */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+
   padding: 0.8rem 1.5rem;
   background-color: var(--primary-color);
   color: var(--clear-color);
@@ -218,6 +219,13 @@ ul {
   color: var(--clear-color);
   padding: 0 6px;
   cursor: pointer;
+}
+.whatsapp-btn {
+  gap: 0.6rem;
+}
+
+.whatsapp-btn i {
+  font-size: 1.3rem;
 }
 
 /* Módulos */

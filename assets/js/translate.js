@@ -11,7 +11,7 @@ const es = {
     title: "Optimice sus Procesos Industriales con Ops·Flow",
     description:
       "Transforme su planta industrial con nuestro software MES avanzado. Gestione eficientemente la producción, reduzca el downtime y mejore la calidad de sus procesos.",
-    btn1: "Solicitar Demo",
+    btn1: "Contactanos",
     btn2: "Explorar Módulos →",
     btn3: "Descargar Folleto",
   },
@@ -146,7 +146,8 @@ const es = {
     implementationLink: "Implementación",
     contactLink: "Contacto",
     rights: "&copy; 2024 Árido Operation Flow. Todos los derechos reservados.",
-    requestDemoBtn: "Solicitar Demo",
+    requestDemoBtn: "Contactanos",
+    phoneLabel: "Teléfono",
   },
 };
 const en = {
@@ -162,7 +163,7 @@ const en = {
     title: "Optimize your industrial process with Ops·Flow",
     description:
       "Transform your industrial plant with our advanced MES software. Efficiently manage production, reduce downtime, and improve the quality of your processes.",
-    btn1: "Request a Demo",
+    btn1: "Contact Us",
     btn2: "Explore Modules →",
     btn3: "Download Brochure",
   },
@@ -297,7 +298,8 @@ const en = {
     implementationLink: "Implementation",
     contactLink: "Contact",
     rights: "&copy; 2024 Árido Operation Flow. All rights reserved.",
-    requestDemoBtn: "Request Demo",
+    requestDemoBtn: "Contact us",
+    phoneLabel: "Phone",
   },
 };
 
