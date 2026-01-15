@@ -219,6 +219,15 @@ ul {
   padding: 0 6px;
   cursor: pointer;
 }
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.whatsapp-btn i {
+  font-size: 1.3rem;
+}
 
 /* Módulos */
 .modulo {
