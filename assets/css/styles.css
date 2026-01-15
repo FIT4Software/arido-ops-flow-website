@@ -193,7 +193,8 @@ ul {
 
 /* Botones */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+
   padding: 0.8rem 1.5rem;
   background-color: var(--primary-color);
   color: var(--clear-color);
@@ -220,8 +221,6 @@ ul {
   cursor: pointer;
 }
 .whatsapp-btn {
-  display: flex;
-  align-items: center;
   gap: 0.6rem;
 }
 
